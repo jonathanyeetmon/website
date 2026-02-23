@@ -846,6 +846,79 @@ p.blurb{
 .blog-content .img.float-right {
   margin: 15px 0 15px 15px; }
 
+
+/* for timeline */
+/* Career timeline */
+.timeline{
+  position: relative;
+  padding-left: 24px;
+  margin-left: 10px;
+}
+
+.timeline:before{
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255,255,255,0.25); /* tweak if needed */
+}
+
+.timeline-item{
+  position: relative;
+  margin: 0 0 22px 0;
+}
+
+.timeline-dot{
+  position: absolute;
+  left: 2px;
+  top: 18px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid rgba(0,0,0,0.15);
+}
+
+.timeline-content{
+  margin-left: 28px;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+}
+
+.timeline-meta{
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 6px;
+}
+/* Make timeline section match Projects (purple) */
+#career.overlay.bg-fixed {
+  color: #fff;
+}
+
+/* Title/subtitle on dark background */
+#career .about-me-heading,
+#career .section-sub-title,
+#career h4,
+#career p {
+  color: #fff;
+}
+
+/* Timeline cards (optional: slightly translucent so they look nice on purple) */
+#career .timeline-content{
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+#career .timeline:before{
+  background: rgba(255,255,255,0.35);
+}
+#career .timeline-dot{
+  background: #fff;
+  border: 3px solid rgba(255,255,255,0.35);
+}
+
+
 /*=====  End of BLOG  ======*/
 /*====================================
 =            FORM CONTROL            =
